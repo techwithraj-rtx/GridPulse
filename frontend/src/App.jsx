@@ -11,7 +11,7 @@ import AlertsView from './components/AlertsView';
 import ReportsView from './components/ReportsView';
 import { AlertCircle, RefreshCw } from 'lucide-react';
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 export default function App() {
   // Navigation active tab
